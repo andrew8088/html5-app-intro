@@ -56,3 +56,71 @@
 	 - Web Sockets
 	 - React / Angular
 	 - 
+
+# Audience 
+- Some have done legacy web dev (server-driven web apps).
+- Some with no clue about web dev.
+
+Single Page Application (SPA) - what is that, how into tools they have heard about (React / Angular)
+
+Why web over desktop? take .NET (winforms, WPF, silverlight) - all owned by a single company, how long will they support these technologies? continue to provide new features?
+
+web is OPEN - people will contribute. 
+
+desktop is CLOSED - vendor lock-in, tools lock in (Visual Studio). (ex: co-op is using ryder, have to update winForms UI by hand, in code)
+
+Iteration: can tweak a web app in Chrome, change HTML / CSS, interact with UI fast. better, more diverse tooling
+
+Cross platform: not just for windows (or limited set of windows versions). Mobile (check), Tablet (check), Mac (check) Chromebook (check).
+
+many free librarys: not enterprise support, but easy to get your hands on.
+
+if you want to target the largest possible amount of people, use the web. stats: mac user count, win user count, web user count.
+
+Demo: how easy to change code.
+
+JSP: change code, compile Java, deploy/restart. Started to have templates, but that's moving towards web-style.
+
+Languages:
+- Java / .NET: very strict
+- JS: not strict at all
+- HTML / CSS: separation of content and style (vs winforms, where content and style are tightly-coupled)
+
+Only One Problem ... Performance
+
+easier, because abstracted, but comes at a perf cost. farther from the hardware (browser is like a second layer of VM?)
+tradeoff is that it's cross-platform, because historically, limited system access (file systems, DBs, webcam, OS features). 
+
+However, more recently, as part of HTML5, more new APIs. Did you know ... (not just a website)
+
+OpenFin, Electron: more APIs, b/c "desktop" wrappers.
+
+Web Assembly?
+
+(don't mention tooling, muddies the waters)
+
+Java Swing: slow (garbage collections?)
+
+Available Paradigms: OOP, Functional, diff worlds, diff paradigms.
+
+example: thread vs event loop
+
+2020 Strategy: we look at web tech for UI. years ago, only function mattered, because people looked at UIs during the day, at work. After that, not much. Now: we look at UIs all day every day. Especially mobile. And some of these experiences are really good! (Apple design awards?) Users know that it can be better. Used to good design, typography, familiar gestures / interactions (pull down to refresh (twitter, then Apple Mail). we need to use the tech that's used outside (if we want to keep up?) so that people are used to what they see. Use what they are familiar with, make it intuitive. 
+
+... Never use outlook at home ...
+
+Accessibility, Responsive: UI concepts born out of the web.
+
+Always have access to the source code: example: grid lib, want to restyle, need to request the change from vendor. Can't reach into code and override manually. The web is open.
+
+
+
+
+
+
+
+
+
+
+
+
