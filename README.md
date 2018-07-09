@@ -113,7 +113,7 @@ Accessibility, Responsive: UI concepts born out of the web.
 
 Always have access to the source code: example: grid lib, want to restyle, need to request the change from vendor. Can't reach into code and override manually. The web is open.
 
-
+What do you wish you had known before getting into JS? https://news.ycombinator.com/item?id=17466391
 
 
 
