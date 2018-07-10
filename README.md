@@ -8,7 +8,6 @@
 - keep it high level
 - assume your audience knows nothing about HTML5
 
-
 ### PC
 
 - tell a story: beginning, middle, end
@@ -16,8 +15,38 @@
 - what did we do?
 - what was the result?
 
+## Slides
 
-## Talk
+### Slide 1: Title Card
+
+Introduction to HTML5 Applications
+
+### Slide 2: Personal Intro
+
+Andrew Burgess, I've been at RBC for about a year and a half. Work on Logan (Algo Trading Platform) primarily, the UI, and HTML5 application.
+
+### Slide 3: Title
+
+HTML5 is the best UI choice for your next application.
+
+### Slide 4: What's the Problem?
+
+## Notes
+
+- What is the problem we are trying to solve?
+
+The problem is that UIs are now something that everyone deals with all day
+long.  Gone are the days of only working with a limited number of UIs, only
+during working hours. Now, we use dozens of UIs daily; for many of us, it's
+from the moment we wake up to the moment we fall asleep. More importantly, our
+users are using dozens of UIs daily. They know what good UIs look like.
+
+
+- What is an HTML5 Application?
+- How does it solve the problem?
+
+
+Main Message: HTML5 is the best UI choice for your next application
 
 - What is HTML5 / an HTML5 application?
 	- graphical User Interface accessed via the browser (or another web wrapper)
