@@ -92,8 +92,8 @@ These technologies aren't owned by a single company: when doing Windows (winform
 
 The **Tools** are open. Desktop dev, locked into specific tools:
 
-	- Windows: Visual Studio (example: co-op use JetBrains Rider, have to update winform UI in code, no interface builder.)
-	- Mac: XCode
+- Windows: Visual Studio (example: co-op use JetBrains Rider, have to update winform UI in code, no interface builder.)
+- Mac: XCode
 
 With the web, tons of options. Free options (Atom, VSCode, Brackets), Commerial options (IntellJ/WebStorm, Sublime Text).
 
@@ -201,3 +201,5 @@ What do you wish you had known before getting into JS? https://news.ycombinator.
 https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies
 
 https://www.w3.org/wiki/Open_Web_Platform
+
+https://en.wikipedia.org/wiki/Usage_share_of_operating_systems
