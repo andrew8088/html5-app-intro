@@ -56,11 +56,13 @@ Why else?
 
 ### What is an HTML5 Application?
 
+Web application is UI build with HTML/CSS/JavaScript, accessed in browser via a URL, or in another browser-based wrapper (Electron).
+
 All web applictions have at minimum two parts, or sides, which are:
 
 - **client-side**: run in the user's browser. Responsible for rendering the UI, displaying the data, making requests or sending commands to the server.
 
-- **server-side**: runs on your server. Responsible for serving the client-side application to the browser (via HTTP), querying databases, or other APIs (depending on your architecture), performing authentication and authorization. 
+- **server-side**: runs on your server. Responsible for serving the client-side application to the browser (via HTTP), querying databases, or other APIs (depending on your architecture), performing authentication and authorization. Common Frameworks: ruby on rails, django, spring boot, express, ASP.NET.
 
 Either side here can do the heavy lifting: time was, the client side was thin, basically just forms you filled and submitted; the server side would do the heavy lifting. Now, more common to have thin server, that is basically just a proxy to the database.
 
@@ -70,14 +72,68 @@ You've probably heard of Single Page Applications (SPAs). Previously, there was 
 
 A SPA changes that: instead, of the page being a dumb output that is simply rendered, the initial request includes all the neccessary views. Switching no longer means reloading the entire page: it means just rendering the right view, which you already have in the browser. You might need to request data, but that raw payload (JSON/CSV/XML/text) is much smaller.
 
+Mention WebSockes, other HTTP-alts here. 
+
+Mention React / Angular here.
+
 Pros / Cons?
 
+### Why HTML5?
 
-### How does it solve the problem?
+#### Open
+
+The Web is open. This means several things:
+
+The **Technology** is open: HTML / CSS / JavaScript specifications are not developed by single company, behind closed doors. Open standard, you can contribute as well!
+
+https://github.com/tc39/proposals
+
+These technologies aren't owned by a single company: when doing Windows (winforms, WPF, silverlight) or Mac (Cocoa API) development. Don't have to worry about how long a company will support and extend.
+
+The **Tools** are open. Desktop dev, locked into specific tools:
+
+	- Windows: Visual Studio (example: co-op use JetBrains Rider, have to update winform UI in code, no interface builder.)
+	- Mac: XCode
+
+With the web, tons of options. Free options (Atom, VSCode, Brackets), Commerial options (IntellJ/WebStorm, Sublime Text).
+
+The **Libraries** are open. Literally hundreds of free libraries (can be a down-side, since many are poorly supported). One of the biggest open source communities. Example: React (driven by Facebook, but anyone can contribute: https://github.com/facebook/react/issues) Even libraries with paid support, 
+
+Not just dev tools, but many libraries / frameworks as well. Anyone can contribute. Can get 
+
+The **Source** is open: As we'll see in a second here, you can disect any web application you come across, because there's no compilation.
+
+The **
+
+web is OPEN - people will contribute. 
 
 
+many free librarys: not enterprise support, but easy to get your hands on.
 
-### Did you know?
+Always have access to the source code: example: grid lib, want to restyle, need to request the change from vendor. Can't reach into code and override manually. The web is open.
+
+#### Faster Iteration
+
+Demo: how easy to change code: change letter-spacing, img src, and background-color, marquee on home page.
+
+JSP: change code, compile Java, deploy/restart. Started to have templates, but that's moving towards web-style.
+
+#### Cross-platform
+
+know people who want to switch to macbook here at RBC, but they can't do without several applications that require Windows. Don't let your app get in the way of people. 
+
+Cross platform: not just for windows (or limited set of windows versions). Mobile (check), Tablet (check), Mac (check) Chromebook (check).
+
+if you want to target the largest possible amount of people, use the web.
+
+GET STATS: mac user count, win user count, web user count.
+
+#### Performance - REASON NOT TO
+
+easier, because abstracted, but comes at a perf cost. farther from the hardware (browser is like a second layer of VM?)
+tradeoff is that it's cross-platform, because historically, limited system access (file systems, DBs, webcam, OS features). 
+
+### Did you know? NEW HTML APIs
 
 Let's wrap up with some of the cool things you might not know you can do in a web application. 
 
@@ -89,91 +145,44 @@ Let's wrap up with some of the cool things you might not know you can do in a we
 - native contextMenu
 - web workers / shared workers / etc...
 
+Using a wrapper like Electron / OpenFin? More APIs that you can take advantage of.
 
+NOT JUST A WEBSITE
+
+### Buzzwords?
+
+- HTML5
+- CSS3
+- JavaScript / CoffeeScript / TypeScript
+- Web Sockets
+- Web Workers
+- React
+- Angular
+- Web Assembly
 
 ## Brainstorm
 
-Main Message: HTML5 is the best UI choice for your next application
-
-- What is HTML5 / an HTML5 application?
-	- graphical User Interface accessed via the browser (or another web wrapper)
-	- often described as a front-end vs. back-end, which are two seperate apps that are often tightly coupled.
-	- front-end: UI build on web technologies: HTML, CSS, JavaScript
-	- back-end: any web server (ruby on rails, django, spring boot, express, ASP.NET?)
+Use EMS UI as example.
 
 - Why build an HTML5 application (vs. what?)?
 	- JavaScript: most commonly used langauge in the world, according to https://insights.stackoverflow.com/survey/2018/#technology
-	- 
-
-- How is it different from a traditional GUI?
-	- Deployment: deployed to a server, accessed via a browser.
-	- 
-
 
 - What are the pros and cons?
 	- "it runs fast videos on the interwebs" - HL
 
 - What languages / technologies are used? (libraries, frameworks, build tools, etc.)
-	- 
 
 - What's the process of building an HTML5 application?
 	- transpiling
-	- 
 
-- How does this relate to ...?
-	- 
-
-
-- Briefly demo Logan's architecture
-- Common Technologies / Buzzwords
-	 - HTML5
-	 - CSS(3)
-	 - JavaScript / TypeScript
-	 - Web Sockets
-	 - React / Angular
-	 - 
-
-# Audience 
+### Audience 
 - Some have done legacy web dev (server-driven web apps).
 - Some with no clue about web dev.
-
-Single Page Application (SPA) - what is that, how into tools they have heard about (React / Angular)
-
-Why web over desktop? take .NET (winforms, WPF, silverlight) - all owned by a single company, how long will they support these technologies? continue to provide new features?
-
-web is OPEN - people will contribute. 
-
-desktop is CLOSED - vendor lock-in, tools lock in (Visual Studio). (ex: co-op is using ryder, have to update winForms UI by hand, in code)
-
-Iteration: can tweak a web app in Chrome, change HTML / CSS, interact with UI fast. better, more diverse tooling
-
-Cross platform: not just for windows (or limited set of windows versions). Mobile (check), Tablet (check), Mac (check) Chromebook (check).
-
-many free librarys: not enterprise support, but easy to get your hands on.
-
-if you want to target the largest possible amount of people, use the web. stats: mac user count, win user count, web user count.
-
-Demo: how easy to change code.
-
-JSP: change code, compile Java, deploy/restart. Started to have templates, but that's moving towards web-style.
 
 Languages:
 - Java / .NET: very strict
 - JS: not strict at all
 - HTML / CSS: separation of content and style (vs winforms, where content and style are tightly-coupled)
-
-Only One Problem ... Performance
-
-easier, because abstracted, but comes at a perf cost. farther from the hardware (browser is like a second layer of VM?)
-tradeoff is that it's cross-platform, because historically, limited system access (file systems, DBs, webcam, OS features). 
-
-However, more recently, as part of HTML5, more new APIs. Did you know ... (not just a website)
-
-OpenFin, Electron: more APIs, b/c "desktop" wrappers.
-
-Web Assembly?
-
-(don't mention tooling, muddies the waters)
 
 Java Swing: slow (garbage collections?)
 
@@ -187,16 +196,8 @@ example: thread vs event loop
 
 Accessibility, Responsive: UI concepts born out of the web.
 
-Always have access to the source code: example: grid lib, want to restyle, need to request the change from vendor. Can't reach into code and override manually. The web is open.
-
 What do you wish you had known before getting into JS? https://news.ycombinator.com/item?id=17466391
 
+https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies
 
-
-
-
-
-
-
-
-
+https://www.w3.org/wiki/Open_Web_Platform
