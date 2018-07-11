@@ -33,18 +33,65 @@ HTML5 is the best UI choice for your next application.
 
 ## Notes
 
-- What is the problem we are trying to solve?
+### What is the problem we are trying to solve?
 
 The problem is that UIs are now something that everyone deals with all day
 long.  Gone are the days of only working with a limited number of UIs, only
 during working hours. Now, we use dozens of UIs daily; for many of us, it's
 from the moment we wake up to the moment we fall asleep. More importantly, our
-users are using dozens of UIs daily. They know what good UIs look like.
+users are using dozens of UIs daily. They know what good UI/UX looks like.
+
+And they expect that.
+
+For many of us, we have a captive user base. The client support teams that use
+the Logan UI can't use a different application to run commands or view orders.
+But getting and keeping users isn't the only reason to have good UI/UX.
+
+NOTE: this isn't really the only problem ... 
+
+Why else?
+
+- easy of use
+- reduced developer involvement 
+
+### What is an HTML5 Application?
+
+All web applictions have at minimum two parts, or sides, which are:
+
+- **client-side**: run in the user's browser. Responsible for rendering the UI, displaying the data, making requests or sending commands to the server.
+
+- **server-side**: runs on your server. Responsible for serving the client-side application to the browser (via HTTP), querying databases, or other APIs (depending on your architecture), performing authentication and authorization. 
+
+Either side here can do the heavy lifting: time was, the client side was thin, basically just forms you filled and submitted; the server side would do the heavy lifting. Now, more common to have thin server, that is basically just a proxy to the database.
+
+#### Single Page Applications
+
+You've probably heard of Single Page Applications (SPAs). Previously, there was a one-to-one relationship between URLs and the page that was viewed. Moving between the pages caused the browser to send a request to the server, for a new page (HTML/CSS/JS). Often, this meant that many of the common elements of your pages (styling, navigation, etc.) were part of every request. 
+
+A SPA changes that: instead, of the page being a dumb output that is simply rendered, the initial request includes all the neccessary views. Switching no longer means reloading the entire page: it means just rendering the right view, which you already have in the browser. You might need to request data, but that raw payload (JSON/CSV/XML/text) is much smaller.
+
+Pros / Cons?
 
 
-- What is an HTML5 Application?
-- How does it solve the problem?
+### How does it solve the problem?
 
+
+
+### Did you know?
+
+Let's wrap up with some of the cool things you might not know you can do in a web application. 
+
+- Geolocation API
+- Device motion and orientation events provide access to the built-in accelerometer, gyroscope, and compass in mobile devices.
+- Push Notifications (toasts?)
+- Video/Audio playback
+- Video/Audio/Image capture
+- native contextMenu
+- web workers / shared workers / etc...
+
+
+
+## Brainstorm
 
 Main Message: HTML5 is the best UI choice for your next application
 
